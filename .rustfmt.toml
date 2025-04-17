@@ -1,0 +1,23 @@
+# Use 2 spaces for indentation
+hard_tabs = false
+tab_spaces = 2
+
+# Format all files consistently
+edition = "2024"
+
+# Put where clauses on a new line for readability
+where_single_line = false
+
+# Format comments
+format_code_in_doc_comments = true
+normalize_comments = true
+
+# Allow imports to be grouped
+merge_imports = true
+group_imports = "StdExternalCrate"
+
+# Remove trailing commas where unnecessary
+trailing_comma = "Never"
+
+# Ensure long lines are wrapped
+max_width = 120
