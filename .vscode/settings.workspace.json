@@ -1,0 +1,21 @@
+{
+  "debug.allowBreakpointsEverywhere": true,
+  "editor.formatOnSave": true,
+  "[feature]": {
+    "editor.formatOnSave": false
+  },
+  "lldb.launch.cwd": "${workspaceFolder}",
+  "lldb.launch.sourceLanguages": [
+    "rust"
+  ],
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.runnables.extraEnv": {
+    "PATH": "$(${workspaceFolder}/.vscode/settings-helper.sh --get-env-path)"
+  },
+  "rust-analyzer.server.path": "$(${workspaceFolder}/.vscode/settings-helper.sh --get-rust-analyzer-path)",
+  "rust-analyzer.server.extraEnv": {
+    "PATH": "$(${workspaceFolder}/.vscode/settings-helper.sh --get-env-path)"
+  },
+  "rust-analyzer.rust.analyzerTargetDir": "${workspaceFolder}/target/rust-analyzer",
+  "nix.formatterPath": "$(${workspaceFolder}/.vscode/settings-helper.sh --get-nix-formatter-path)"
+}
